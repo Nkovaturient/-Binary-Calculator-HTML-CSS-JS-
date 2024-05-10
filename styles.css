@@ -97,6 +97,10 @@ button:active{
     #calc{
         width: 180px;
         height: 400px;
+        height: fit-content;
+    }
+    #display{
+        height: fit-content;
     }
 
     button{
@@ -108,14 +112,30 @@ button:active{
         box-sizing: border-box;
     }
 
-    .eqdisp {
-        display: inline-block;
-        width: calc(40% - 10px);
-    }
-
-    .equal{
-        display: none;
-    }
     
     
 }
+
+@media screen and (max-width: 768px){
+
+    #calc{
+        width: 210px;
+        height: 300px;
+        height: fit-content;
+    }
+    #display{
+        height: fit-content;
+    }
+
+    button{
+        height:fit-content;
+        width: calc(30% - 7px);
+        font-size: 18px;
+        margin: 0.3rem;
+        padding: 0.45rem;
+        box-sizing: border-box;
+    }  
+    
+}
+
+
